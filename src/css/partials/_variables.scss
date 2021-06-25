@@ -1,0 +1,10 @@
+$bg-color: #434343;
+$padding: 10px;
+$padding2: 5px;
+$border-raduis: 5px;
+$icon-width: 1.2rem;
+$menu-width: 140px;
+$header-width: 60px;
+:root{
+    --header-w:calc(100% - $menu-width);
+}

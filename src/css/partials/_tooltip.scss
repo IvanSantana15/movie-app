@@ -1,0 +1,28 @@
+
+
+.tooltip::before,
+.tooltip::after{
+  --scale:0;
+
+  position:absolute;
+  top: .50rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%) scale(var(--scale));
+  transform-origin: top;
+  transition: 50ms transform;
+  z-index: 9;
+  font-size: 15px;
+}
+.tooltip::before{
+  content: attr(data-tooltip);
+  width: max-content;
+  background: #000;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.tooltip:hover::before{
+ --scale:1;
+}

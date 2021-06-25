@@ -1,0 +1,96 @@
+@import "./variables";
+
+.header{
+    
+    background: rgb(245, 5, 5);
+    width: 100%;
+   
+    padding: $padding;
+    position:sticky;
+   
+    
+    .menu-btn{
+        
+        width: 30px;
+        height: 30px;
+        color: white;
+        text-align: center;
+        padding: $padding2;
+        display: inline-block;
+        margin-right: $padding;
+        font-size: $icon-width;
+       
+       
+    }
+    .app-title{
+       
+        display: inline-block;
+        position: absolute;
+        width: calc(100% - 65px );
+        height: 30px;
+        left: 0;
+        right: 0;
+       margin: auto 50px;
+        text-align: left;
+        padding: $padding2;
+
+        a{
+            text-decoration: none;
+            
+            .title-f{
+            color: yellow;
+            font-family: 'Dancing Script', cursive;
+            font-size: 22px;
+            font-weight: bold;
+            text-shadow:2px 2px #000;
+        }
+            .title-l{
+                color: white;
+            }
+        }
+
+    
+    }
+
+    .search-container{
+        margin-top: $padding2;
+        padding: $padding2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form{
+           padding: $padding2;
+           display: flex;
+           
+        }
+
+        .form .search,
+        .form .search-btn{
+            height: 30px;
+            padding: $padding2;
+            margin: 0 $padding2 ;
+        }
+
+        .form .search{
+            border-radius: $border-raduis;
+            border: none;
+
+            &:hover{
+                box-shadow: 0 0 4px 1px #333;
+            }
+        }
+
+        .form .search-btn{
+            background: none;
+            border: none;
+            font-size: $icon-width;
+            color: yellow;
+
+            &:hover{
+                color: #333;
+
+            }
+        }
+       
+    }
+}

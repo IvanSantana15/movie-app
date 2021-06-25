@@ -1,0 +1,30 @@
+@import "./partials/menu";
+@import "./partials/_variables.scss";
+@import "./partials/header";
+@import "./partials/tooltip";
+@import "./partials/mainContent";
+@import "./partials/card";
+
+
+*{
+    
+    box-sizing: border-box;
+}
+
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    
+    font-size: 18px;
+    background: $bg-color;
+    // font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
+    position: relative;
+
+    
+
+}

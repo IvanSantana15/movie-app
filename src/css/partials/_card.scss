@@ -1,0 +1,42 @@
+@import "./variables";
+
+.card{
+    background:#333;
+    width: 170px;
+    height: 240px;
+    padding:$padding2 ;
+    font-size: 16px;
+    margin:  auto;
+    border-radius: $border-raduis;
+    box-shadow: 0 0 3px 1px;
+
+    .card-header{
+// background: #000;
+        width: 100%;
+       height: 60%;
+    }
+
+    .card-info{
+        padding: $padding2;
+        width: 100%;
+        height: 40%;
+      //  background: rgb(201, 28, 28);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;;
+        display: flex;
+        flex-direction: column;
+
+        .card-title{
+            font-size: 18px;
+            color: yellow;
+        }
+
+        .card-description{
+            font-size: 14px;
+            color: white;
+        }
+
+    }
+
+}
