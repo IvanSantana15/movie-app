@@ -3,6 +3,7 @@ import { fetchMovies, getMoviesState, setMoviesState } from "./helpers/movies.js
 import { movieCard } from "./components/movieCard.js"
 import  { handlerSearch} from "./helpers/handlerSearch.js"
 import {message}from "./components/message.js"
+import {Loader} from "./components/Loader.js"
 
 
 
@@ -11,8 +12,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const dynamicContainer = document.getElementById("dynamicContent")
     const searchForm = document.getElementById("searchForm")
 
-    
+    dynamicContainer.appendChild(Loader())
+
     await fetchMovies("https://www.omdbapi.com/?s=Batman&page=1&apikey=a64bb1e4")
+    dynamicContainer.innerHTML = ""
     getMoviesState().arrayMovies.map(movie => movieCard(dynamicContainer, movie))
 
     searchForm.addEventListener("submit", async (e)=>{
@@ -23,6 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const formValidation = handlerSearch(e)
 
        if(formValidation.message.length === 0 ){
+           dynamicContainer.appendChild(Loader())
            
            await fetchMovies(`https://www.omdbapi.com/?s=${formValidation.textToSearch}&page=1&apikey=a64bb1e4`)
 
