@@ -1,7 +1,7 @@
 
 
 
-export const movieCard = (container, {Title = "",Poster="",Type="" })=>{
+export const movieCard = (container, {Title = "",Poster="",Type="", imdbID= "" })=>{
    const cardContainer=  document.createElement('div')
    cardContainer.classList.add("card")
 
@@ -16,6 +16,10 @@ export const movieCard = (container, {Title = "",Poster="",Type="" })=>{
         <div class="card-description">
             ${Type}
         </div>
+        <di>
+           <a href="#/${imdbID}">Ver mas</a>
+        </div>
+        
    `
     
    container.appendChild(cardContainer)

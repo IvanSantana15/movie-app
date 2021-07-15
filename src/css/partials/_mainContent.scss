@@ -2,13 +2,55 @@
     //background: #000;
     width: 100vw;
     height: fit-content;
-    position: absolute;
+   // position: relative;
     padding: $padding 0;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     grid-row-gap: 20px;
+    //transform: translateX(140px);
+   // background: rgb(7, 201, 7);
+   z-index: 99;
     
     
     
 }
+
+//@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main{
+        
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+        .card{
+            width: 200px;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main{
+       
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+        .card{
+            width: 190px;
+        }
+    }
+}
+@media only screen and (min-width: 836px) {
+    .movie-datail{
+        background: #000;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+//@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+//@media only screen and (min-width: 1200px) {...}
+

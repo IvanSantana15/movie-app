@@ -1,0 +1,46 @@
+.movie-datail{
+  background: #333;
+  box-shadow: 0 0 3px 1px;
+  border-radius: 5px;
+   max-width: 1000px;
+   width: calc(100% - 15px);
+    //height: 500px;
+    margin: auto;
+    padding: 10px;
+   display: flex;
+
+ flex-direction: row;
+   text-align: center;
+   flex-wrap: wrap;
+
+   .img-container{
+       padding: 1px;
+        margin: auto;
+   // line-height: 60%;
+       img{
+          max-width: 100%; 
+          width: 300px;
+          border-radius: 5px;
+          max-height: calc(100% - 15px);
+           
+       }
+   }
+
+   .movie-description{
+       //background: rgb(214, 204, 204);
+     max-width: 100%; 
+     width: 500px;
+    
+       text-align: center;
+       margin: auto;
+       color: white;
+
+       .title{
+           color: yellow;
+       }
+       .actors, .plot, h4{
+           font-size: 16px;
+       }
+       
+   }
+}
